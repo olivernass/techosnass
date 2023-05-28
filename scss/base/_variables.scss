@@ -1,0 +1,17 @@
+$bg-color: #fff;
+$text-color: #221314;
+$second-color: #5a7184;
+$main-color: #456ec9;
+$big-font: 6rem;
+$h2-font: 3rem;
+$p-font: 1.1rem;
+
+@mixin all ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}

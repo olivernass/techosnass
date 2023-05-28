@@ -1,0 +1,11 @@
+.nosotros-bnr {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: url(../img/banner5.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}

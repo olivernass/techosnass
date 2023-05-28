@@ -1,0 +1,188 @@
+@media (max-width: 1400px) {
+    header {
+        padding: 17px 3%;
+        transition: .2s;
+    }
+
+    header.sticky {
+        padding: 10px 3%;
+        transition: .2s;
+    }
+
+    section {
+        padding: 80px 3%;
+        transition: .2s;
+    }
+
+    .home{
+
+    .home-text{
+        h1{
+            font-size: 4.5rem;
+            transition: .2s;
+        }
+    }
+}
+
+.text h2{
+    font-size: 2.3rem;
+    transition: .2s;
+}
+
+.services{
+
+    .title{
+        h2{
+            font-size: 2.3rem;
+            transition: .2s;
+        }
+    }
+}
+
+.work{
+    .title{
+        h2{
+            font-size: 2.3rem;
+            transition: .2s;
+        }
+    }
+}
+
+ul li a{
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.navvbar {
+    a {
+        font-size: 1rem;
+        transition: .2s;
+    }
+}
+
+}
+
+@media (max-width: 1040px) {
+    #menu-icon{
+        display: block;
+    }
+
+    .sticky #menu-icon{
+        color: $text-color;
+    }
+
+    .home{
+        height: 88vh;
+    }
+
+    .navvbar{
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 120vh;;
+        background: $main-color;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 30px;
+        transition: 0.5s all;
+    }
+
+    .navvbar a{
+        display: block;
+        margin: 1.2rem 0;
+    }
+
+    .sticky .navvbar a{
+        color: $bg-color;
+        
+        &:hover{
+            color: $text-color;
+        }
+
+    }
+
+    .open{
+        right: 0;
+    }
+
+    .list{
+        width: 50%;
+        margin-bottom: 12px;
+    }
+
+    .social{
+        padding: 9px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+
+@media (max-width: 575px){
+
+    .list{
+        width: 100%;
+    }
+
+    .home{
+
+        .home-text{
+            h1{
+                font-size: 3.8rem;
+                transition: .2s;
+            }
+        }
+    }
+    
+    .text h2{
+        font-size: 1.8rem;
+        transition: .2s;
+    }
+    
+    .services{
+    
+        .title{
+            h2{
+                font-size: 1.8rem;
+                transition: .2s;
+            }
+        }
+    }
+    
+    .work{
+        .title{
+            h2{
+                font-size: 1.8rem;
+                transition: .2s;
+            }
+        }
+    }
+    
+    .text{
+        text-align: center;
+    }
+
+    .home{
+        height: 85vh;
+        transition: .2s;
+    }
+
+
+}

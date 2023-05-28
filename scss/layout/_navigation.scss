@@ -1,0 +1,31 @@
+ul{
+    margin-bottom: 0rem
+}
+
+.navvbar {
+    display: flex;
+
+
+    a {
+        color: $bg-color;
+        font-size: $p-font;
+        font-weight: 500;
+        padding: 10px 22px;
+        border-radius: 4px;
+        transition: ease .40s;
+        text-decoration: none;
+
+        &:hover {
+            background: $bg-color;
+            color: $text-color;
+            box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    }
+}
+
+.sticky .navvbar a {
+    color: $text-color;
+    text-decoration: none;
+}

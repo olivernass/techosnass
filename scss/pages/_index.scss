@@ -1,0 +1,223 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+
+    .home-text {
+
+        h1 {
+            font-size: $big-font;
+            line-height: 1.2;
+            ;
+            color: $bg-color;
+            font-family: 'Paytone One', sans-serif;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #ffffffbf;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 38px;
+            margin-bottom: 50px;
+
+        }
+    }
+
+    .home-btn {
+        display: inline-block;
+        font-size: 16px;
+        padding: 15px 30px;
+        background: #ffffffbf;
+        color: $main-color;
+        border-radius: 4px;
+        transition: ease .40s;
+
+        &:hover {
+            background: $bg-color;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.text h2 {
+    font-size: $h2-font;
+    line-height: 1.1;
+}
+
+.row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+
+    .container-box {
+        background: $bg-color;
+        border: 1px solid #f0eded;
+        padding: 50px 10px;
+        border-radius: 4px;
+        transition: all 1s ease 0s;
+        cursor: pointer;
+
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: $second-color;
+        }
+
+        &:hover {
+            box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+            border: 1px solid transparent;
+            transform: translateY(-3px);
+        }
+    }
+
+    .container-img img {
+        height: 85px;
+        width: 85px;
+        padding: 15px;
+        background: $bg-color;
+        box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+        border-radius: 4px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+}
+
+.services {
+
+    .title {
+
+        h2 {
+            font-size: $h2-font;
+            line-height: 1.2;
+        }
+    }
+
+    .services-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        grid-gap: 2rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .thum {
+        position: relative;
+        transition: all .3s cubic-bezier(.445, .05, .55, .95);
+        will-change: filter;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+
+    .budget-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 24px;
+
+        .budget-info {
+            h4 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 15px;
+                color: $second-color;
+            }
+        }
+
+        .stars {
+            i {
+                color: $main-color;
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    
+}
+
+.work {
+    .title {
+
+        h2 {
+            font-size: $h2-font;
+            line-height: 1.2;
+        }
+    }
+
+    .work-content {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+        grid-gap: 2rem;
+        align-items: center;
+        margin-top: 5rem;
+
+        .col-content {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 15px;
+                filter: brightness(80%);
+                transition: all .3s cubic-bezier(.445, .05, .55, .95);
+                will-change: filter;
+
+                &:hover {
+                    filter: brightness(100%);
+                    transform: scale(1.04);
+                    cursor: pointer;
+                }
+            }
+
+            h5 {
+                position: absolute;
+                font-size: 22px;
+                font-weight: 500;
+                color: $bg-color;
+                left: 15px;
+                bottom: 80px;
+            }
+
+            p {
+                position: absolute;
+                font-size: 15px;
+                color: $bg-color;
+                left: 15px;
+                bottom: 30px;
+                letter-spacing: 2px;
+            }
+
+        }
+    }
+}
