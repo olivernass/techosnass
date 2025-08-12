@@ -1,3 +1,20 @@
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* saca subrayado del enlace */
+}
+
+.logo img {
+    height: 40px; /* ajusta tamaño del ícono */
+    width: auto;
+    margin-right: 8px; /* espacio entre ícono y texto */
+}
+
+.logo span {
+    font-size: 1.2rem; /* ajusta tamaño del texto */
+    font-weight: bold;
+}
+
 .fade-in {
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
